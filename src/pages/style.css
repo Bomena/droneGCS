@@ -1,0 +1,24 @@
+
+#box {
+    padding-right: 8px;
+    padding-bottom: 0px;
+}
+.box2{
+    padding: 0px;
+}
+
+.btn {
+    font-size: x-large;
+    font-family: serif;
+    font-weight: bolder;
+    text-align: right;
+    padding: 0px;
+
+}
+.btn2 {
+    font-size: x-large;
+    font-family: serif;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0px;
+}
