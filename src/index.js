@@ -4,7 +4,7 @@ import './index.css';
 import Map from './App';
 import GridTop from './pages/index'
 import reportWebVitals from './reportWebVitals';
-import img from './offline.png'
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,7 +13,7 @@ root.render(
     <div>
       <GridTop />
     </div>
-    <img id='pic' src={img} />
+    <img id='pic' src="" />
     <Map id='map' />
   </React.StrictMode>
 );

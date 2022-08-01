@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Now from './Date'
 import Grid from '@material-ui/core/Grid';
-import './style.css'
+import './style.css';
+import '../index.css';
+import picture from '../offline.png'
+import '../index'
 
 const styles = theme => ({
     root: {
@@ -10,6 +13,24 @@ const styles = theme => ({
     },
 
 });
+
+function OpenCamera() {
+    let image = new Image();
+    image.src = document.getElementById('pic').src
+
+    let plz = () => {
+        if (image.src === {picture}) {
+            image.src = "";
+        } else {
+            image.src = {picture};
+        }
+    }
+
+    return (
+        <h4 oneClick={plz}>camera</h4>
+    )
+
+}
 
 class GridTop extends Component {
     render() {
