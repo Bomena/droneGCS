@@ -2,25 +2,19 @@
 #box {
     padding-right: 8px;
     padding-bottom: 0px;
-    height: 80px;
 }
-
-#box1, #box2, #box3, #box4 {
-    font-family: serif;
-    height: 80px;
+.box2{
+    padding: 0px;
 }
-
-.time {
-    font-family: serif;
-    padding-left: 20px;
-}
-  
 
 .btn {
-    text-align: center;
-    padding-right: 20px;
-}
+    font-size: x-large;
+    font-family: serif;
+    font-weight: bolder;
+    text-align: right;
+    padding: 0px;
 
+}
 .btn2 {
     font-size: x-large;
     font-family: serif;

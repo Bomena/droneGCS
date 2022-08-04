@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "./style.css"
-
 
 export default function Now() {
   const [timer, setTimer] = useState("00:00:00");
@@ -12,8 +10,8 @@ export default function Now() {
     const minutes = String(date.getMinutes()).padStart(2, "0");
     const seconds = String(date.getSeconds()).padStart(2, "0");
     const year = date.getFullYear();
-    const todayMonth = String(date.getMonth()+1).padStart(2, "0");
-    const todayDate = String(date.getDate()).padStart(2, "0");
+    const todayMonth = date.getMonth() + 1;
+    const todayDate = date.getDate();
     setToday(`${year}.${todayMonth}.${todayDate}`);
     setTimer(`${hours}:${minutes}:${seconds}`)
   }

@@ -1,18 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Map from './pages/Map';
+import Map from './App';
 import GridTop from './pages/index'
 import reportWebVitals from './reportWebVitals';
-//import picture from './offline.png'
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <GridTop />
-    <img id='pic' />
+    <div>
+      <GridTop />
+    </div>
+    <img id='pic' src="" />
     <Map id='map' />
   </React.StrictMode>
 );

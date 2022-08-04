@@ -4,8 +4,8 @@ import Now from './Date'
 import Grid from '@material-ui/core/Grid';
 import './style.css';
 import '../index.css';
-import picture from '../offline.png'
-import '../index'
+import '../index.js'
+import picture from "./offline.png"
 
 const styles = theme => ({
     root: {
@@ -14,38 +14,33 @@ const styles = theme => ({
 
 });
 
-function OpenCamera() {
-    let image = new Image();
-    image.src = document.getElementById('pic').src
+class GridTop extends Component {
 
-    let plz = () => {
-        if (image.src === {picture}) {
-            image.src = "";
+    openCamera = () => {
+        if (document.getElementById("pic").src === "http://localhost:3000/static/media/offline.5757bca830909ce08813.png") {
+            document.getElementById("pic").src = "";
         } else {
-            image.src = {picture};
+            document.getElementById("pic").src = picture;
         }
     }
 
-    return (
-        <h4 oneClick={plz}>camera</h4>
-    )
+    openLog = () => {
+        
+    }
 
-}
-
-class GridTop extends Component {
     render() {
         const { classes } = this.props;
         return (
             <div id="box" className={classes.root}>
-                <Grid className='box2' container spacing={3}>
-                <Grid className='box2' item xs={10}>
+                <Grid id="box1" container spacing={3}>
+                <Grid id="box2" item xs={10}>
                     <Now />
                 </Grid>
-                 <Grid className="btn" item xs={1}>
-                    <div><h4>camera</h4></div>
+                 <Grid id="box3" className='btn' onClick={this.openCamera} item xs={1}>
+                    <div><h2 className='color'>camera</h2></div>
                 </Grid>
-                <Grid className="btn2" item xs={1}>
-                    <div><h4>log</h4></div>
+                <Grid id="box4" className='btn'item xs={1}>
+                    <div><h2 className='color'>log</h2></div>
                 </Grid>
                 </Grid>
             </div>
