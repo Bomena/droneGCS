@@ -19,7 +19,31 @@ code {
   margin-bottom: -500px;
   z-index: 1000;
   position: relative;
-  width: 35%;
+  width: 35vw;
   border-radius: 5px;
 
+}
+
+.log {
+  display: none;
+}
+
+#log {
+  float: right;
+  z-index: 10000;
+  position: relative;
+  background-color: rgb(255, 235, 205);
+  border-radius: 5px;
+  width: 35vw;
+  margin-right: 8px;
+  margin-top: 21%;
+}
+
+.none {
+  display: block;
+}
+
+.text {
+  font-family: serif;
+  padding-left: 5%;
 }
